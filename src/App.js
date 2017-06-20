@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Switch, Route, NavLink } from 'react-router-dom'
 import './App.css'
 import Github from './Github'
+import LastFM from './LastFM'
+import Wunderground from './Wunderground'
 
 class App extends Component {
   render() {
@@ -14,12 +16,16 @@ class App extends Component {
           </div>
           <ul className="nav-links">
             <li>
-              <NavLink to='/github'>Github API</NavLink>
+              <NavLink to='/github'>Github</NavLink>
+              <NavLink to='/lastfm'>Last FM</NavLink>
+              <NavLink to='/wunderground'>Wunderground</NavLink>
             </li>
           </ul>
         </div>
         <Switch>
           <Route path='/github' component={Github} />
+          <Route path='/lastfm' component={LastFM} />
+          <Route path='/wunderground' component={Wunderground} />
           <Route render={() => <p>To get started, click one of the links above</p>} />
         </Switch>
       </div>

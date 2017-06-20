@@ -35,6 +35,7 @@ h3{
   color: #02b1ff;
   text-decoration: none;
   font-size: 25px;
+  margin: 0 1em;
 }
 
 .nav-links a.active {

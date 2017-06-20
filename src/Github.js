@@ -38,8 +38,7 @@ class Github extends Component{
           </div>
         </form>
         <Route exact path='/github' render={() => <h3>Please enter a username to search on Github</h3>} />
-        <Route path='/github/:username' component={GithubUser}
-        render={({ match }) => <h3>You searched for {match.params.username}</h3>} />
+        <Route path='/github/:username' component={GithubUser} />
       </div>
     )
   }
