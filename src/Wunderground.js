@@ -22,13 +22,13 @@ class Wunderground extends Component{
 
   handleSubmit = (ev) => {
     ev.preventDefault()
-    this.props.history.push(`/wunderground/${this.state.state}/${this.state.city}`)
+    this.props.history.push(`/wg/${this.state.state}/${this.state.city}`)
   }
 
   render(){
     return(
-      <div className="wunderground">
-        <img className="wunderground-logo" src="https://icons.wxug.com/logos/PNG/wundergroundLogo_4c_rev.png" alt="Wunderground Logo"/>
+      <div className="wg">
+        <img className="wg-logo" src="https://icons.wxug.com/logos/PNG/wundergroundLogo_4c_rev.png" alt="Wunderground Logo"/>
         <form onSubmit={this.handleSubmit}>
           <div>
             <input 
@@ -50,8 +50,8 @@ class Wunderground extends Component{
             <button type="submit">Enter the city and state</button>
           </div>
         </form>
-        <Route exact path='/wunderground' render={() => <h3>Enter some text</h3>} />
-        <Route path='/wunderground/:state/:city' component={WundergroundData} />
+        <Route exact path='/wg' render={() => <h3>Enter some text</h3>} />
+        <Route path='/wg/:state/:city' component={WundergroundData} />
       </div>
     )
   }

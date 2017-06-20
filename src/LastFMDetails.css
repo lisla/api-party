@@ -4,8 +4,11 @@
 
 
 .tracks li{
-  background-color: #dbdbdb;
-  margin: 0;
+  background-color: #cbeaf4;
+  margin: 8px;
+  padding: 0.5rem 0;
+  border: 0.5px solid #dddddd;
+  border-radius: 4px;
 }
 
 
@@ -15,4 +18,5 @@
 
 .tracks h3{
   line-height: 20px;
+  font-style: normal;
 }

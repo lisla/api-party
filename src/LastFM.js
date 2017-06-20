@@ -26,14 +26,15 @@ class LastFM extends Component{
         <img className="lastfm-logo" src="http://shaneatkins.co.uk/wp-content/uploads/2012/07/lastfm.jpg" alt="LastFM Logo"/>
         <form onSubmit={this.handleSubmit}>
           <div>
-            <input 
+            <input
+              placeholder="Artist/Track"
               type="text"
               value={this.state.music}
               onChange={this.handleChange}
             />
           </div>
           <div>
-            <button type="submit">Look up a track</button>
+            <button type="submit">Look up an artist or track</button>
           </div>
         </form>
         <Route exact path='/lastfm' render={() => <h3>Please enter a track name</h3>} />

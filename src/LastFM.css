@@ -1,3 +1,14 @@
+.lastfm {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lastfm-logo {
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px;
+}
+
 .lastfm input {
     font-family: "Gentium Book Basic", serif;
     box-sizing: border-box;

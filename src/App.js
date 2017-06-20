@@ -18,14 +18,14 @@ class App extends Component {
             <li>
               <NavLink to='/github'>Github</NavLink>
               <NavLink to='/lastfm'>Last FM</NavLink>
-              <NavLink to='/wunderground'>Wunderground</NavLink>
+              <NavLink to='/wg'>Wunderground</NavLink>
             </li>
           </ul>
         </div>
         <Switch>
           <Route path='/github' component={Github} />
           <Route path='/lastfm' component={LastFM} />
-          <Route path='/wunderground' component={Wunderground} />
+          <Route path='/wg' component={Wunderground} />
           <Route render={() => <p>To get started, click one of the links above</p>} />
         </Switch>
       </div>

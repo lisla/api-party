@@ -36,7 +36,7 @@ class WundergroundData extends Component {
     console.log(location)
 
     return (
-      <div >
+      <div className="wg-data">
         <h3>Temp: {data.temp_f}</h3>
         <h3>Feels Like: {data.feelslike_f}</h3>
         <h3>Humidity: {data.relative_humidity}</h3>
